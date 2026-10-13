@@ -108,3 +108,18 @@ test("bestGrid picks the biggest thumbnails", async ({ page }) => {
   );
   expect(grid.columns).toBe(8);
 });
+
+test("works when remark loads slides from sourceUrl", async ({ page }) => {
+  await page.goto("/tests/fixtures/source-url.html");
+  await page.waitForFunction(() =>
+    document.querySelector(".remark-slides-area .remark-visible"),
+  );
+  await expect(
+    page.locator(".remark-help-content .remark-overview-help .key"),
+  ).toHaveText("o");
+
+  await page.keyboard.press("o");
+  await expect(
+    page.locator(".remark-slides-area .remark-slide-container"),
+  ).toHaveCount(3);
+});

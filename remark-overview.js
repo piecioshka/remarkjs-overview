@@ -1,5 +1,5 @@
 /*!
- * remarkjs-overview v0.1.0
+ * remarkjs-overview v0.1.1
  * See all remark.js slides at once in a grid that fits the screen.
  * https://github.com/piecioshka/remarkjs-overview
  * MIT License (https://piecioshka.mit-license.org)
@@ -102,14 +102,12 @@
     return best;
   }
 
-  /** Adds the shortcut to remark's help screen (`?` or `h`). */
-  function addHelpRow(key, text) {
-    const table = document.querySelector(".remark-help-content table");
-    if (!table) return;
+  function insertHelpRow(table, key, text) {
     const row = document.createElement("tr");
     const keyCell = document.createElement("td");
     const keyLabel = document.createElement("span");
     const textCell = document.createElement("td");
+    row.className = "remark-overview-help";
     keyLabel.className = "key";
     keyLabel.textContent = key;
     keyCell.append(keyLabel);
@@ -119,6 +117,30 @@
     const rows = table.querySelectorAll("tr");
     const lastRow = rows[rows.length - 1];
     lastRow.parentNode.insertBefore(row, lastRow);
+  }
+
+  /**
+   * Adds the shortcut to remark's help screen (`?` or `h`). With `sourceUrl`
+   * remark loads the slides asynchronously and builds the help screen later,
+   * so we wait for it.
+   */
+  function addHelpRow(key, text) {
+    function tryInsert() {
+      const table = document.querySelector(".remark-help-content table");
+      if (!table) return false;
+      if (!table.querySelector(".remark-overview-help")) {
+        insertHelpRow(table, key, text);
+      }
+      return true;
+    }
+    if (tryInsert()) return;
+    const observer = new MutationObserver(() => {
+      if (tryInsert()) observer.disconnect();
+    });
+    observer.observe(document.documentElement, {
+      childList: true,
+      subtree: true,
+    });
   }
 
   function remarkOverview(slideshow, userOptions) {

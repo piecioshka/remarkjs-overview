@@ -1,6 +1,6 @@
 {
   "name": "remarkjs-overview",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "See all remark.js slides at once in a grid that fits the screen",
   "private": true,
   "type": "module",

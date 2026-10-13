@@ -30,13 +30,13 @@ Download [`remark-overview.js`](remark-overview.js) next to your slides, for exa
 
 ```bash
 curl -fsSL -o vendor/remark-overview.js \
-  https://raw.githubusercontent.com/piecioshka/remarkjs-overview/v0.1.0/remark-overview.js
+  https://raw.githubusercontent.com/piecioshka/remarkjs-overview/v0.1.1/remark-overview.js
 ```
 
 Or load it straight from jsDelivr:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/piecioshka/remarkjs-overview@v0.1.0/remark-overview.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/piecioshka/remarkjs-overview@v0.1.1/remark-overview.js"></script>
 ```
 
 ### 2. Load it after remark

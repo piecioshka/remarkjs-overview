@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>remarkjs-overview with sourceUrl</title>
+  </head>
+  <body>
+    <script src="../../demo/vendor/remark.min.js"></script>
+    <script src="../../remark-overview.js"></script>
+    <script>
+      window.slideshow = remark.create({ sourceUrl: "slides.md" });
+      window.overview = remarkOverview(window.slideshow);
+    </script>
+  </body>
+</html>
