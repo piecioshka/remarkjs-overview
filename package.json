@@ -1,0 +1,42 @@
+{
+  "name": "remarkjs-overview",
+  "version": "0.1.0",
+  "description": "See all remark.js slides at once in a grid that fits the screen",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "Piotr Kowalski",
+    "email": "piecioshka@gmail.com",
+    "url": "https://piecioshka.pl/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piecioshka/remarkjs-overview.git"
+  },
+  "homepage": "https://piecioshka.github.io/remarkjs-overview/demo/",
+  "keywords": [
+    "remark",
+    "remarkjs",
+    "slides",
+    "overview",
+    "plugin"
+  ],
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "test": "playwright test",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.64.0",
+    "eslint": "^10.12.0",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.10"
+  }
+}

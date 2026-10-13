@@ -1,0 +1,28 @@
+:root {
+  --remark-overview-accent: #2563eb;
+}
+
+body {
+  margin: 0;
+  background: #e5e7eb;
+  font-family: system-ui, sans-serif;
+}
+
+.remark-slide-content {
+  font-size: 28px;
+  color: #111827;
+}
+
+.remark-slide-content h1,
+.remark-slide-content h2 {
+  color: #1d4ed8;
+}
+
+.remark-slide-content.inverse {
+  background: #1e3a8a;
+  color: #f9fafb;
+}
+
+.remark-slide-content.inverse h1 {
+  color: #f9fafb;
+}

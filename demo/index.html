@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>remarkjs-overview demo</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle
+
+# remarkjs-overview
+
+Press **o** to see all slides at once
+
+---
+
+## How it works
+
+- press **o** to open the overview
+- arrows move the selection
+- **Enter** or a click opens the selected slide
+- **Esc** or **o** goes back where you were
+
+---
+
+## Incremental slides
+
+- the overview shows only the final step
+
+--
+
+- like this one
+
+--
+
+- and this one
+
+---
+
+class: center, middle, inverse
+
+# Part 2
+
+---
+
+## Slide 5
+
+The thumbnails keep the ratio of your slides.
+
+---
+
+## Slide 6
+
+The grid picks the column count that makes thumbnails as big as possible.
+
+---
+
+## Slide 7
+
+```js
+remarkOverview(slideshow);
+```
+
+---
+
+## Slide 8
+
+The shortcut shows up on the help screen (**?** or **h**).
+
+---
+
+## Slide 9
+
+Colors come from CSS custom properties.
+
+---
+
+class: center, middle, inverse
+
+# Part 3
+
+---
+
+## Slide 11
+
+Resize the window while the overview is open.
+
+---
+
+## Slide 12
+
+Works with the presenter view closed.
+
+---
+
+## Slide 13
+
+Zero dependencies besides remark.js.
+
+---
+
+## Slide 14
+
+One file, styles included.
+
+---
+
+class: center, middle
+
+# Thanks
+</textarea>
+    <script src="vendor/remark.min.js"></script>
+    <script src="../remark-overview.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
