@@ -40,7 +40,7 @@ npx playwright install chromium
 ## Releasing 🏷️
 
 1. Bump the version in `package.json`, in the header of `remark-overview.js` and in the URLs in `README.md`.
-2. Commit, then tag: `git tag v<version> && git push --follow-tags`.
+2. Commit, then tag: `git tag v<version> && git push && git push origin v<version>`.
 3. `gh release create v<version> --generate-notes`.
 
 jsDelivr serves the file from the tag, so the URLs in the README work as soon as the tag is pushed.
