@@ -20,14 +20,14 @@ npx playwright install chromium
 
 ## Layout 🗂️
 
-| Path                        | What it is                                                       |
-| --------------------------- | ---------------------------------------------------------------- |
-| `remark-overview.js`        | the plugin, the only file users need                             |
-| `demo/`                     | demo deck used by the tests and published on GitHub Pages        |
-| `demo/vendor/remark.min.js` | remark.js 0.14.1, vendored so the demo works without a CDN       |
-| `tests/`                    | Playwright tests                                                 |
-| `scripts/serve.mjs`         | tiny static server for `npm start` and the Playwright web server |
-| `assets/screenshot.png`     | README image, captured from the demo                             |
+| Path                            | What it is                                                       |
+| ------------------------------- | ---------------------------------------------------------------- |
+| `remark-overview.js`            | the plugin, the only file users need                             |
+| `demo/`                         | demo deck used by the tests and published on GitHub Pages        |
+| `demo/vendor/remark.min.js`     | remark.js 0.14.1, vendored so the demo works without a CDN       |
+| `tests/`                        | Playwright tests                                                 |
+| `scripts/serve.mjs`             | tiny static server for `npm start` and the Playwright web server |
+| `docs/screenshots/overview.png` | README image, captured from the demo                             |
 
 ## How it works 🔧
 

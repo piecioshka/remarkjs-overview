@@ -7,7 +7,7 @@
 
 > See all your [remark.js](https://github.com/gnab/remark) slides at once. Press `o` and the whole deck zooms out into a grid that fits the screen.
 
-[![Overview of a remark.js deck](assets/screenshot.png)](https://piecioshka.github.io/remarkjs-overview/demo/)
+[![Overview of a remark.js deck](docs/screenshots/overview.png)](https://piecioshka.github.io/remarkjs-overview/demo/)
 
 **Demo:** <https://piecioshka.github.io/remarkjs-overview/demo/> (press `o`)
 
